@@ -77,7 +77,7 @@ h1{
 }
 .intro::after{
     content: 'JOEL';
-    animation: jobs 8s infinite ;
+    animation: jobs 9s infinite ;
 }
 @keyframes jobs{
     19%{
