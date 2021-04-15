@@ -243,6 +243,9 @@ h3{
     height:50px;
     width: 50px;
 }
+.logo{
+  margin-right: 60%;
+}
 h1{
   font-size: 30px;
 }
@@ -287,6 +290,8 @@ h1{
   .burger{
     display: block;
     cursor: pointer;
+    position: absolute;
+    right: 10%;
   }
 }
 .nav-active{
