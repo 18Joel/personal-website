@@ -1,0 +1,306 @@
+*{
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+  background-color: #333747;
+}
+  nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: slategray;
+    padding: 15px;
+    z-index: 1;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 500px;
+  }
+  .logo img{
+    height: 50px;
+    width: 50px;
+  }
+  .nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+.nav-links a{
+  color: white;
+  text-decoration:none ;
+  letter-spacing: 3px;
+  font-size: 14px;
+  transition: .5s;
+}
+.nav-links a:hover{
+  color: aqua;
+}
+.burger{
+  display: none;
+}
+.burger div{
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+  background-color: white;
+}
+.introduction{
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-1{
+    font-size: 30px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-1 img{
+  border-radius: 500px;
+  margin: 10px;
+}
+h1{
+ color: white;
+}
+.intro{
+    color: rgb(126, 126, 126);
+}
+.intro::after{
+    content: 'JOEL';
+    animation: jobs 8s infinite ;
+}
+@keyframes jobs{
+    19%{
+       content: 'JOEL';
+    }
+    39%{
+        content: 'a YOUTUBER';
+    }
+    79%{
+        content: 'a CODER';
+    }
+    59%{
+        content: 'a DESINER';
+    }
+    20%{
+        content: 'a YOUTUBER';
+     }
+     40%{
+         content: 'a DESINER';
+     }
+     60%{
+         content: 'a CODER';
+     }
+     80%{
+         content: 'a STUDENT';
+     }
+     99%{
+        content: 'a STUDENT';
+    }
+}
+.page-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.about-me h2{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-me p{
+  padding:0 20% 0 20%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.page-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.html,.css,.javascript{
+    display: flex;
+    flex-direction: row;
+}
+.html{
+    margin-left: 55px;
+}
+.css{
+    margin-left: 65px;
+}
+.javascript{
+    margin-right: 50px;
+}
+h2{
+    color: white;
+    margin: 50px;
+}
+p{
+    color: snow;
+}
+.progress1,.progress2,.progress3{
+    margin: 10px;
+    width: 300px;
+    height: 10px;
+    background-color:rgb(189, 189, 189);
+    border-radius: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.progress1-1{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background: rgb(57, 194, 248);
+}
+.progress2-2{
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    background: rgb(57, 194, 248);
+}.progress3-3{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background: rgb(57, 194, 248);
+}
+.page-4{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+.edu{
+  
+  display: flex;
+  background-color: slategray;
+  padding: 20px;
+  width: 60%;
+  height: fit-content;
+  justify-self: center;
+  align-items: center;
+}
+.edu img {
+  height: 200px;
+  width: 320px;
+  padding: 10px;
+}
+.edu p{
+  font-size:17px ;
+}
+#education{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#education h2{
+  margin: 50px;
+}
+#sm{
+  height: 30vh;
+  width: 100%;
+  background-color: slategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h3{
+  font-size: 25px;
+  color: white;
+}
+#sm a{
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+#sm a:hover{
+  color: rgb(156, 252, 252);
+}
+@media screen and (max-width:890px){
+.logo img{
+    height:50px;
+    width: 50px;
+}
+h1{
+  font-size: 30px;
+}
+.edu{
+  width: 100%;
+}
+
+  .nav-links{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+    background-color: slategray;
+    top: 0;
+    right: -100%;
+    max-width: 400px;
+    padding: 80px 50px;
+    transition: .3s linear;
+  }
+  @media screen and (max-width:515px){
+    .html,.css,.javascript{
+      display: flex;
+      flex-direction: column;
+  }
+  .page-1 img{
+    height: 100px;
+    width: 100px;
+  }
+  .html{
+    margin-left: 0px;
+}
+.css{
+    margin-left: 0px;
+}
+.javascript{
+    margin-right: 0px;
+}
+  }
+
+  .burger{
+    display: block;
+    cursor: pointer;
+  }
+}
+.nav-active{
+  right:0;
+}
+.line1-active{
+  transform: rotate(-45deg) translate(-4px,6px);
+
+}
+
+.line2-active{
+  opacity: 0;
+}
+
+.line3-active{
+  transform: rotate(45deg) translate(-4px,-6px);
+}
