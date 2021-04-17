@@ -239,7 +239,7 @@ h3{
 #sm a:hover{
   color: rgb(156, 252, 252);
 }
-@media screen and (max-width:890px){
+@media screen and (max-width:950px){
 .logo img{
     height:50px;
     width: 50px;
