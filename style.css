@@ -252,11 +252,15 @@ h3{
     }
   }
   @media screen and (max-width:665px){
+    .page-1{
+      align-items: center;
+    }
     .img2{
-      bottom: -5%;
+      bottom: -2%;
     }
     h1{
       padding: 2%;
+      left: 2%;
     }
     .page-2{
       height: 100vh;
