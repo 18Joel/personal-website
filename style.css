@@ -46,8 +46,9 @@
 }
   .burger div{
     width: 25px;
-    height: 2px;
+    height: 1px;
     margin: 5px;
+    padding: 1.5%;
     background-color: rgb(0, 0, 0);
   }
   h1 {
@@ -98,6 +99,7 @@
 .img2{
   position: absolute;
   margin-top: 15%;
+  width: 100%;
   z-index: 2;
 }
 .page-2{
@@ -154,7 +156,7 @@ h3{
 }
 .p-of-edu{
   color: rgb(112, 112, 112);
-  padding:2% 0% 0 5%;
+  padding:5% 5% 5% 5%;
 }
 .page-3 img{
   position: absolute;
@@ -199,7 +201,7 @@ h3{
     color: white;
   }
   .page-2{
-    height: 70vh;
+    height: 100vh;
   }
   .page-2 img{
     height: 60%;
@@ -244,9 +246,12 @@ h3{
       right: 10%;
     }
   }
-  @media screen and (max-width:500px){
+  @media screen and (max-width:665px){
+    .img2{
+      display: none;
+    }
     .page-2{
-      height: 70vh;
+      height: 100vh;
     }
     .page-2 img{
       height: 40%;
@@ -256,6 +261,15 @@ h3{
     }
     .page-3 img{
       width:100%;
+    }
+    .burger{
+      right: 10%;
+    }
+    .burger div{
+      padding:1.5%;
+    }
+    .nav-links a{
+      font-size: 14px;
     }
   }
   .nav-active{
