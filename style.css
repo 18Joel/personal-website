@@ -254,7 +254,7 @@ h3{
   @media screen and (max-width:665px){
     .page-1{
       align-items: center;
-      height: 95vh;
+      height: 90vh;
     }
     .img2{
       bottom: -2%;
