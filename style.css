@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
+    font-family: 'poppins';
 }
 
 .page-1{
@@ -98,7 +99,7 @@
 }
 .img2{
   position: absolute;
-  margin-top: 15%;
+  margin-top: 45%;
   width: 100%;
   z-index: 2;
 }
@@ -118,10 +119,11 @@ h2{
   color: rgb(75, 75, 75);
 }
 .p-of-about{
-  text-align: center;
+  text-align: left;
   color: rgb(112, 112, 112);
-  padding:2% 0% 0 0px;
+  padding:2% 0% 0 2%;
   width: 40%;
+  font-size: 20px;
 }
 .cover{
   position: absolute;
@@ -157,6 +159,7 @@ h3{
 .p-of-edu{
   color: rgb(112, 112, 112);
   padding:5% 5% 5% 5%;
+  font-size: 20px;
 }
 .page-3 img{
   position: absolute;
