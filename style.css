@@ -100,7 +100,7 @@
 }
 .img2{
   position: absolute;
-  bottom: -5%; 
+  bottom: -10%; 
   width: 100%;
   z-index: 2;
 }
@@ -166,6 +166,9 @@ h3{
   width: 600px;
 }
 @media screen and (max-width:950px){
+  .img2{
+    bottom: -5%;
+  }
   h1{
     background: rgba(0, 0, 0, 0.562);
     margin-right: 0%;
@@ -250,7 +253,10 @@ h3{
   }
   @media screen and (max-width:665px){
     .img2{
-      display: none;
+      bottom: -3%;
+    }
+    h1{
+      padding: 2%;
     }
     .page-2{
       height: 100vh;
