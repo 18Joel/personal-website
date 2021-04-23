@@ -1,0 +1,275 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+.page-1{
+  background: linear-gradient(to left ,#d540ec, #5f1782);
+  height: 100vh;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tech{
+  position: absolute;
+  right: 10%;
+  height:70% ;
+}
+.navbar{
+  background: linear-gradient(to left ,#d540ec, #5f1782);
+    position: fixed;
+    z-index: 3;
+    border-bottom: 2px solid rgb(66, 66, 66);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 3vh;
+    padding: 15px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+  }
+  .nav-links a{
+    text-decoration-style: none;
+    color: rgb(255, 255, 255);
+    text-decoration:none ;
+    letter-spacing: 3px;
+    font-size: 17px;
+  }
+.burger{
+  display: none;
+}
+  .burger div{
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    background-color: rgb(0, 0, 0);
+  }
+  h1 {
+    margin-right: 50%;
+    padding: 10px;
+    color: white;
+    font-size: 40px;
+    z-index:2;
+    background:rgba(0, 0, 0, 0.479);
+    border-radius: 5px;
+  }
+  h1 span{
+    color: #e66ff1;
+  }
+  h1 span::after{
+    content: 'JOEL';
+    animation: jobs 9s infinite ;
+}
+@keyframes jobs{
+  19%{
+      content: 'JOEL';
+  }
+  39%{
+      content: 'a YOUTUBER';
+  }
+  79%{
+      content: 'a CODER';
+  }
+  59%{
+      content: 'a DESIGNER';
+  }
+  20%{
+      content: 'a YOUTUBER';
+     }
+  40%{
+      content: 'a DESIGNER';
+  }
+  60%{
+      content: 'a CODER';
+  }
+  80%{
+      content: 'a STUDENT';
+  }
+  99%{
+      content: 'a STUDENT';
+  }
+}
+.img2{
+  position: absolute;
+  margin-top: 15%;
+  z-index: 2;
+}
+.page-2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width:100%;
+}
+
+h2{
+  font-size: 40px;
+  display:flex;
+  padding: 2%;
+  margin: 0%;
+  color: rgb(75, 75, 75);
+}
+.p-of-about{
+  text-align: center;
+  color: rgb(112, 112, 112);
+  padding:2% 0% 0 0px;
+  width: 40%;
+}
+.cover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.page-2 img{
+  right: 5%;
+  position: absolute;
+  height: 80%;
+  width:45% ;
+}
+.page-3{
+  background-image:linear-gradient(20deg,rgb(231, 127, 252),rgb(231, 127, 252),white,white);
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: flex-end;
+  width:100%;
+}
+.edu{
+  z-index: 3;
+  width: 40%;
+}
+h3{
+  color: rgb(75, 75, 75);
+  font-size: 40px;
+  padding: 5%;
+  position: relative;
+}
+.p-of-edu{
+  color: rgb(112, 112, 112);
+  padding:2% 0% 0 5%;
+}
+.page-3 img{
+  position: absolute;
+  left: 0%;
+  width: 600px;
+}
+@media screen and (max-width:950px){
+  h1{
+    background: rgba(0, 0, 0, 0.562);
+    margin-right: 0%;
+  }
+  .edu{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.562);
+    padding-bottom: 5%;
+    border-radius: 5px;
+    transform: translateY(100px);
+    width: 75%;
+  }
+  .page-3{
+    justify-content: center;
+    align-items: center;
+  }
+  .page-3 img{
+    position: absolute;
+  width: 600px;
+  }
+  h2,h3{
+    font-size: 30px;
+  }
+  h3{
+    color: rgb(253, 230, 213);
+  }
+  p{
+    font-size:17px ;
+  }
+  .p-of-about{
+    text-align: left;
+    padding-left: 10px;
+  }
+  .p-of-edu{
+    color: white;
+  }
+  .page-2{
+    height: 70vh;
+  }
+  .page-2 img{
+    height: 60%;
+    transform: translateY(25px);
+  }
+  .cover{
+    background-color: rgba(0, 0, 0, 0.281);
+  }
+  .cover2{
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg ,rgba(0, 0, 0, 0.616),white);
+  }
+  h1 span{
+    color: rgb(206, 151, 252);
+  }
+  h1{
+    font-size: 30px;
+  }
+.nav-links{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    background: linear-gradient(to left ,#d540ec, #5f1782);
+    top: 0;
+    width:100%;
+    right: -100%;
+    transition: .3s linear;
+    }
+    .nav-links a{
+      margin-left: 10%;
+    }
+
+    .burger{
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: 10%;
+    }
+  }
+  @media screen and (max-width:500px){
+    .page-2{
+      height: 70vh;
+    }
+    .page-2 img{
+      height: 40%;
+    }
+    .edu{
+      width: 75%;
+    }
+    .page-3 img{
+      width:100%;
+    }
+  }
+  .nav-active{
+    right:0;
+  }
+  .line1-active{
+    transform: rotate(-45deg) translate(-4px,6px);
+  
+  }
+  
+  .line2-active{
+    opacity: 0;
+  }
+  
+  .line3-active{
+    transform: rotate(45deg) translate(-4px,-6px);
+  }
