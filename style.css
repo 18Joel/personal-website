@@ -4,7 +4,9 @@
     overflow-x: hidden;
     font-family: 'poppins';
 }
-
+::-webkit-scrollbar{
+  display: none;
+}
 .page-1{
   background: linear-gradient(to left ,#d540ec, #5f1782);
   height: 100vh;
@@ -98,18 +100,13 @@
       content: 'a STUDENT';
   }
 }
-.img2{
-  position: absolute;
-  bottom: -10%; 
-  width: 100%;
-  z-index: 2;
-}
 .page-2{
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 100vh;
   width:100%;
+  background: white;
 }
 
 h2{
@@ -124,6 +121,8 @@ h2{
   color: rgb(112, 112, 112);
   padding:2% 0% 0 2%;
   width: 40%;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .cover{
   position: absolute;
@@ -137,37 +136,145 @@ h2{
   height: 80%;
   width:45% ;
 }
-.page-3{
-  background-image:linear-gradient(20deg,rgb(231, 127, 252),rgb(231, 127, 252),white,white);
-  height: 100vh; 
-  display: flex;
-  justify-content: center;
-  flex-direction: column; 
-  align-items: flex-end;
-  width:100%;
-}
+
 .edu{
   z-index: 3;
   width: 40%;
 }
 h3{
-  color: rgb(75, 75, 75);
+  color: white;
   font-size: 40px;
   padding: 5%;
   position: relative;
+
 }
 .p-of-edu{
-  color: rgb(112, 112, 112);
+  color: white;
   padding:5% 5% 5% 5%;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .page-3 img{
   position: absolute;
   left: 0%;
   width: 600px;
 }
+.page-3{
+  background-image:linear-gradient(to left ,#d540ec, #5f1782);
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: flex-end;
+  width:100%;
+  left:-100%;
+  transform: translateY(-200%);
+}
+.page-4{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 5;
+    left: 100%;
+    transform: translateY(-300%);
+}
+.html,.css,.javascript{
+    display: flex;
+    flex-direction: row;
+}
+.html{
+    margin-left: 55px;
+}
+.css{
+    margin-left: 65px;
+}
+.javascript{
+    margin-right: 50px;
+}
+
+.progress1,.progress2,.progress3{
+    margin: 10px;
+    width: 300px;
+    height: 10px;
+    background-color:rgb(189, 189, 189);
+    border-radius: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.progress1-1,.progress2-2,.progress3-3{
+  left: -100%;
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(to left ,#ed76ff, #ca31f0);  
+  left: -100%;
+}
+.progress1-1{
+    width: 80%;
+}
+.progress2-2{
+    width: 65%;
+}.progress3-3{
+    width: 60%;
+
+}
+
+
+.paper-plane{
+  left: -10%;
+  transform: rotate(35deg);
+  position: absolute;
+  height: 100px;
+}
+
+.page-5{
+  height:100vh;
+  background-image:linear-gradient(to left ,#d540ec, #5f1782);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 7;
+  left:-100%;
+  transform: translateY(-400%);
+}
+
+h4{
+  bottom: 10%;
+  position: absolute;
+padding: 10px;
+height: min-content;
+width:fit-content;
+color: white;
+font-size: 40px;
+background:rgba(0, 0, 0, 0.479);
+border-radius: 5px;
+left: 42.5%;
+}
+h5{
+  font-size: 40px;
+  color: white;
+  top: 10%;
+  position: absolute;
+  left: 40%;
+}
+#sm div{
+  display: flex;
+  flex-direction: row;
+  top: 50%;
+  transform: translateX(33%);
+}
+#sm img{
+  margin: 20px;
+  height: 100px;
+}
 @media screen and (max-width:950px){
-  .img2{
-    bottom: -5%;
+  .paper-plane{
+    display: none;
+  }
+  .progress1-1,.progress2-2,.progress3-3{
+    left:0%;
   }
   h1{
     background: rgba(0, 0, 0, 0.562);
@@ -189,11 +296,8 @@ h3{
     position: absolute;
   width: 600px;
   }
-  h2,h3{
+  h2{
     font-size: 30px;
-  }
-  h3{
-    color: rgb(253, 230, 213);
   }
   p{
     font-size:17px ;
@@ -254,10 +358,7 @@ h3{
   @media screen and (max-width:665px){
     .page-1{
       align-items: center;
-      height: 90vh;
-    }
-    .img2{
-      bottom: -2%;
+      height: 100vh;
     }
     h1{
       padding: 2%;
